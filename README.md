@@ -1,3 +1,8 @@
+## WIP ##
+
+This branch is still work in progress and needs to be tested with every twrp 11 device tree. Also we need to research
+which packages are safe to remove from the project so lower its size.
+
 ## Submitting Patches ##
 ------------------
 Our project is open source, and patches are always welcome!
