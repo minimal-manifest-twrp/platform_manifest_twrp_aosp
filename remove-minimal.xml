@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remove from default.xml -->
+
+    <!-- LAST: Add/Replace repos and particular directories needed by TWRP -->
+    <include name="twrp-extras.xml"/>
+</manifest>
