@@ -10,10 +10,8 @@
 
 
     <!-- TWRP lives in TeamWin android-11 (not AOSP!) -->
-    <remove-project name="platform/bootable/recovery"/>
     <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-11"/>
 
-    <remove-project name="platform/build"/>
     <project path="build/make" name="android_build" remote="TeamWin" revision="android-11" groups="pdk">
         <copyfile src="core/root.mk" dest="Makefile"/>
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
@@ -24,13 +22,11 @@
         <linkfile src="tools" dest="build/tools"/>
     </project>
 
-    <remove-project name="platform/build/soong"/>
     <project path="build/soong" name="android_build_soong" remote="TeamWin" revision="android-11">
         <linkfile src="root.bp" dest="Android.bp"/>
         <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
     </project>
 
-    <remove-project name="platform/external/bouncycastle"/>
     <project path="external/bouncycastle" name="external_bouncycastle" remote="TeamWin" revision="android-11"/>
 
     <!-- Include external Magisk repo for repack binaries -->
@@ -48,13 +44,10 @@
     <!-- Include ntfs_3g for NTFS support -->
     <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-18.1"/>
 
-    <remove-project name="platform/system/core"/>
     <project path="system/core" name="android_system_core" remote="TeamWin" revision="android-11"/>
 
-    <remove-project name="platform/system/libhidl"/>
     <project path="system/libhidl" name="android_system_libhidl" remote="TeamWin" revision="android-11"/>
 
-    <remove-project name="platform/system/update_engine"/>
     <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-11"/>
 
     <!-- Include lineage-tools for lzma support -->
@@ -62,5 +55,10 @@
              revision="lineage-18.1"/>
 
     <!-- Use TeamWin repos for full recovery compatibility -->
-    <project path="vendor/twrp" name="android_vendor_twrp" remote="TeamWin" revision="android-11"/>
+    <project path="vendor/twrp" name="android_vendor_twrp" remote="TeamWin" revision="android-11" >
+       <copyfile src="dummy/Android.mk" dest="frameworks/base/core/xsd/vts/Android.mk" />
+       <copyfile src="dummy/Android.mk" dest="frameworks/base/services/core/xsd/vts/Android.mk" />
+       <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/compatibilityMatrix/vts/Android.mk" />
+       <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/halManifest/vts/Android.mk" />
+    </project>
 </manifest>

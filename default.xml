@@ -932,6 +932,6 @@
 
     <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload"/>
 
-    <!-- LAST: Remove unused/forked Projects for minimal TWRP -->
-    <include name="remove-minimal.xml"/>
+    <!-- FIRST: Remove unused/forked Projects for minimal manifest -->
+    <include name="remove.xml"/>
 </manifest>
