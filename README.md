@@ -10,7 +10,7 @@ You can send patches by using:
 
 Pull request, right here on git.
 
-Contact us at https://twrp.zulipchat.com/join/rts4x5gsomsvr3tpbcnaj6ia/
+Contact us at https://twrp.zulipchat.com/join/q7tia6astzzn6egzwulw2nej/
 
 ## Maintaining Authorship ##
 ----------------------
