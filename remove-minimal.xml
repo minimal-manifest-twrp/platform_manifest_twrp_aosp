@@ -125,7 +125,6 @@
     <remove-project name="platform/external/nfacct"/>
     <remove-project name="platform/external/nist-pkits"/>
     <remove-project name="platform/external/nist-sip"/>
-    <remove-project name="platform/external/noto-fonts"/>
     <remove-project name="platform/external/oauth"/>
     <remove-project name="platform/external/objenesis"/>
     <remove-project name="platform/external/okhttp"/>
@@ -140,7 +139,6 @@
     <remove-project name="platform/external/python/cpython3"/>
     <remove-project name="platform/external/replicaisland"/>
     <remove-project name="platform/external/rmi4utils"/>
-    <remove-project name="platform/external/roboto-fonts"/>
     <remove-project name="platform/external/rootdev"/>
     <remove-project name="platform/external/seccomp-tests"/>
     <remove-project name="platform/external/sfntly"/>
@@ -171,10 +169,8 @@
     <remove-project name="platform/external/walt"/>
     <remove-project name="platform/external/webp"/>
     <remove-project name="platform/external/webrtc"/>
-    <remove-project name="platform/external/wpa_supplicant_8"/>
     <remove-project name="platform/external/wycheproof"/>
     <remove-project name="platform/external/xmp_toolkit"/>
-    <remove-project name="platform/external/zopfli"/>
     <remove-project name="platform/external/zxing"/>
 
     <remove-project name="platform/frameworks/av" />
