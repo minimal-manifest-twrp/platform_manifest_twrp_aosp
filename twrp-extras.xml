@@ -8,6 +8,8 @@
             fetch="https://github.com/LineageOS"
             review="https://review.lineageos.org"/>
 
+    <remote name="github"
+            fetch="https://github.com"/>
 
     <!-- TWRP lives in TeamWin android-11 (not AOSP!) -->
     <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-11"/>
