@@ -195,6 +195,8 @@
     <remove-project name="platform/hardware/google/apf"/>
     <remove-project name="platform/hardware/google/easel"/>
     <remove-project name="platform/hardware/google/interfaces"/>
+    <remove-project name="platform/hardware/google/pixel"/>
+    <remove-project name="platform/hardware/interfaces"/>
     <remove-project name="platform/hardware/qcom/keymaster"/>
 
     <remove-project name="platform/packages/apps/BasicSmsReceiver"/>
@@ -349,7 +351,6 @@
     <remove-project name="platform/tools/tradefederation/contrib"/>
 
     <remove-project name="platform/tools/asuite"/>
-    <remove-project name="platform/hardware/google/pixel"/>
 
     <!-- LAST: Add/Replace repos and particular directories needed by TWRP -->
     <include name="twrp-extras.xml"/>
