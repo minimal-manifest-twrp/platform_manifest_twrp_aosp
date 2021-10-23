@@ -34,6 +34,9 @@
     <!-- Include external Magisk repo for repack binaries -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-11"/>
 
+    <!-- Include external Magisk repo for repack binaries -->
+    <project path="system/sepolicy" name="android_system_sepolicy" remote="TeamWin" revision="android-11"/>
+
     <!-- Include external/bash for bash support -->
     <project path="external/bash" name="android_external_bash" remote="LineageOS" revision="lineage-18.1"/>
 

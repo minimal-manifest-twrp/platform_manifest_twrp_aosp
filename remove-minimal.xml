@@ -318,6 +318,7 @@
     <remove-project name="platform/system/connectivity/wifilogd"/>
     <remove-project name="platform/system/chre"/>
     <remove-project name="platform/system/nvram"/>
+    <remove-project name="platform/system/sepolicy"/>
 
     <!-- Remove platform/test/vts to avoid the test errors and more dependencies -->
     <remove-project name="platform/test/app_compat/csuite" />
