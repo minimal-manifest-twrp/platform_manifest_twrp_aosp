@@ -46,6 +46,9 @@
     <!-- Include external/libncurses for bash and nano support -->
     <project path="external/libncurses" name="android_external_libncurses" remote="LineageOS" revision="lineage-18.1"/>
 
+    <!-- Include phh's treble repo for lptools support -->
+    <project name="phhusson/vendor_lptools" path="external/lptools" remote="github" revision="master" />
+
     <!-- Include ntfs_3g for NTFS support -->
     <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-18.1"/>
 
