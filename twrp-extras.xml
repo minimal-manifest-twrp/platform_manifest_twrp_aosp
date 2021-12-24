@@ -71,4 +71,13 @@
        <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/compatibilityMatrix/vts/Android.mk" />
        <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/halManifest/vts/Android.mk" />
     </project>
+
+    <!-- Common Qualcomm Repos -->
+    <project name="android_device_qcom_common" path="device/qcom/common" remote="TeamWin" revision="android-11" />
+    <project name="android_device_qcom_twrp-common" path="device/qcom/twrp-common" remote="TeamWin" revision="android-11" />
+    <project name="android_hardware_qcom_bootctrl" path="hardware/qcom-caf/bootctrl" remote="LineageOS" revision="lineage-18.1-caf" />
+    <project name="android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" remote="LineageOS" revision="lineage-18.1" />
+    <project name="android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="LineageOS" revision="lineage-18.1" />
+    <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="LineageOS" revision="lineage-18.1" />
+    <project name="android_vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="LineageOS" revision="lineage-18.1" />
 </manifest>
