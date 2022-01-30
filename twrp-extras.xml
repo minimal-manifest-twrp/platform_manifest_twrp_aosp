@@ -11,10 +11,10 @@
     <remote name="github"
             fetch="https://github.com"/>
 
-    <!-- TWRP lives in TeamWin android-11 (not AOSP!) -->
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-11"/>
+    <!-- TWRP lives in TeamWin android-10 (not AOSP!) -->
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-10"/>
 
-    <project path="build/make" name="android_build" remote="TeamWin" revision="android-11" groups="pdk">
+    <project path="build/make" name="android_build" remote="TeamWin" revision="android-10" groups="pdk">
         <copyfile src="core/root.mk" dest="Makefile"/>
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
@@ -24,18 +24,18 @@
         <linkfile src="tools" dest="build/tools"/>
     </project>
 
-    <project path="build/soong" name="android_build_soong" remote="TeamWin" revision="android-11">
+    <project path="build/soong" name="android_build_soong" remote="TeamWin" revision="android-10">
         <linkfile src="root.bp" dest="Android.bp"/>
         <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
     </project>
 
-    <project path="external/bouncycastle" name="external_bouncycastle" remote="TeamWin" revision="android-11"/>
+    <project path="external/bouncycastle" name="external_bouncycastle" remote="TeamWin" revision="android-10"/>
 
     <!-- Include external Magisk repo for repack binaries -->
-    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-11"/>
+    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-10"/>
 
     <!-- Include TeamWin sepolicy repo for postinstall support -->
-    <project path="system/sepolicy" name="android_system_sepolicy" remote="TeamWin" revision="android-11"/>
+    <project path="system/sepolicy" name="android_system_sepolicy" remote="TeamWin" revision="android-10"/>
 
     <!-- Include external/bash for bash support -->
     <project path="external/bash" name="android_external_bash" remote="LineageOS" revision="lineage-18.1"/>
@@ -52,20 +52,20 @@
     <!-- Include ntfs_3g for NTFS support -->
     <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-18.1"/>
 
-    <project path="hardware/interfaces" name="android_hardware_interfaces" remote="TeamWin" revision="android-11"/>
+    <project path="hardware/interfaces" name="android_hardware_interfaces" remote="TeamWin" revision="android-10"/>
 
-    <project path="system/core" name="android_system_core" remote="TeamWin" revision="android-11"/>
+    <project path="system/core" name="android_system_core" remote="TeamWin" revision="android-10"/>
 
-    <project path="system/libhidl" name="android_system_libhidl" remote="TeamWin" revision="android-11"/>
+    <project path="system/libhidl" name="android_system_libhidl" remote="TeamWin" revision="android-10"/>
 
-    <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-11"/>
+    <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-10"/>
 
     <!-- Include lineage-tools for lzma support -->
     <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS"
              revision="lineage-18.1"/>
 
     <!-- Use TeamWin repos for full recovery compatibility -->
-    <project path="vendor/twrp" name="android_vendor_twrp" remote="TeamWin" revision="android-11" >
+    <project path="vendor/twrp" name="android_vendor_twrp" remote="TeamWin" revision="android-10" >
        <copyfile src="dummy/Android.mk" dest="frameworks/base/core/xsd/vts/Android.mk" />
        <copyfile src="dummy/Android.mk" dest="frameworks/base/services/core/xsd/vts/Android.mk" />
        <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/compatibilityMatrix/vts/Android.mk" />
@@ -73,8 +73,8 @@
     </project>
 
     <!-- Common Qualcomm Repos -->
-    <project name="android_device_qcom_common" path="device/qcom/common" remote="TeamWin" revision="android-11" />
-    <project name="android_device_qcom_twrp-common" path="device/qcom/twrp-common" remote="TeamWin" revision="android-11" />
+    <project name="android_device_qcom_common" path="device/qcom/common" remote="TeamWin" revision="android-10" />
+    <project name="android_device_qcom_twrp-common" path="device/qcom/twrp-common" remote="TeamWin" revision="android-10" />
     <project name="android_hardware_qcom_bootctrl" path="hardware/qcom-caf/bootctrl" remote="LineageOS" revision="lineage-18.1-caf" />
     <project name="android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" remote="LineageOS" revision="lineage-18.1" />
     <project name="android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="LineageOS" revision="lineage-18.1" />
