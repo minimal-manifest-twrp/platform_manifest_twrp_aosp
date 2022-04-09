@@ -710,6 +710,7 @@
     <remove-project name="platform/system/chre"/>
     <remove-project name="platform/system/iorap"/>
     <remove-project name="platform/system/libartpalette"/>
+    <remove-project name="platform/system/libhwbinder" />
     <remove-project name="platform/system/libsysprop"/>
     <remove-project name="platform/system/media"/>
     <remove-project name="platform/system/nvram"/>
