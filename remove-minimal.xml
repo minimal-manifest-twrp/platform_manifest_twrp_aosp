@@ -703,7 +703,6 @@
     <remove-project name="platform/prebuilts/runtime" />
     <remove-project name="platform/prebuilts/r8" />
     <remove-project name="platform/prebuilts/tools"/>
-    <remove-project name="platform/prebuilts/vndk/v28" />
     <remove-project name="platform/prebuilts/vndk/v29" />
     <remove-project name="platform/prebuilts/vndk/v30" />
 
