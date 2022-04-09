@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-12.0.0_r7"
            remote="aosp"
@@ -1103,4 +1103,6 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+  <!-- FIRST: Remove unused/forked Projects for minimal manifest -->
+  <include name="remove.xml"/>
 </manifest>

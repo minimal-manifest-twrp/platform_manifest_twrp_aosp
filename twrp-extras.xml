@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="TeamWin"
+            fetch="https://github.com/TeamWin"
+            review="https://gerrit.twrp.me"/>
+
+    <remote name="LineageOS"
+            fetch="https://github.com/LineageOS"
+            review="https://review.lineageos.org"/>
+
+    <remote name="github"
+            fetch="https://github.com"/>
+
+    <!-- TWRP lives in TeamWin android-12 (not AOSP!) -->
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-12"/>
+
+    <!-- Use TeamWin repos for full recovery compatibility -->
+    <project path="build/make" name="android_build" remote="TeamWin" revision="android-12" groups="pdk">
+        <copyfile src="core/root.mk" dest="Makefile"/>
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
+        <linkfile src="core" dest="build/core"/>
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh"/>
+        <linkfile src="target" dest="build/target"/>
+        <linkfile src="tools" dest="build/tools"/>
+    </project>
+    <project path="build/soong" name="android_build_soong" remote="TeamWin" revision="android-12">
+        <linkfile src="root.bp" dest="Android.bp"/>
+        <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
+    </project>
+    <project path="external/icu" name="android_external_icu" remote="TeamWin" revision="android-12"/>
+    <project path="external/libxml2" name="android_external_libxml2" remote="TeamWin" revision="android-12"/>
+    <project path="external/sqlite" name="android_external_sqlite" remote="TeamWin" revision="android-12"/>
+    <project path="packages/modules/adb" name="android_packages_modules_adb" remote="TeamWin" revision="android-12"/>
+    <project path="system/core" name="android_system_core" remote="TeamWin" revision="android-12"/>
+    <project path="system/libhidl" name="android_system_libhidl" remote="TeamWin" revision="android-12"/>
+    <project path="system/libhwbinder" name="android_system_libhwbinder" remote="TeamWin" revision="android-12"/>
+    <project path="system/security" name="android_system_security" remote="TeamWin" revision="android-12"/>
+    <project path="system/vold" name="android_system_vold" remote="TeamWin" revision="android-12"/>
+    <project path="vendor/twrp" name="android_vendor_twrp" remote="TeamWin" revision="android-12" >
+       <copyfile src="dummy/Android.mk" dest="frameworks/base/core/xsd/vts/Android.mk" />
+       <copyfile src="dummy/Android.mk" dest="frameworks/base/services/core/xsd/vts/Android.mk" />
+       <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/compatibilityMatrix/vts/Android.mk" />
+       <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/halManifest/vts/Android.mk" />
+    </project>
+
+    <!-- Include phh's treble repo for lptools support -->
+    <project name="phhusson/vendor_lptools" path="external/lptools" remote="github" revision="master" />
+
+    <!-- Include external Magisk repo for repack binaries -->
+    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-12"/>
+
+    <!-- Include external/bash for bash support -->
+    <project path="external/bash" name="android_external_bash" remote="LineageOS" revision="lineage-19.1"/>
+
+    <!-- Include external/libncurses for bash and nano support -->
+    <project path="external/libncurses" name="android_external_libncurses" remote="LineageOS" revision="lineage-19.1"/>
+
+    <!-- Include external/nano for nano support -->
+    <project path="external/nano" name="android_external_nano" remote="LineageOS" revision="lineage-19.1"/>
+
+    <!-- Include ntfs_3g for NTFS support -->
+    <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-18.1"/>
+
+    <!-- Include lineage-tools for lzma support -->
+    <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS" revision="lineage-19.1"/>
+
+    <!-- qcom -->
+    <project name="android_device_qcom_common" path="device/qcom/common" remote="TeamWin" revision="android-12" />
+    <project name="android_device_qcom_twrp-common" path="device/qcom/twrp-common" remote="TeamWin" revision="android-12" />
+    <project name="android_hardware_qcom_bootctrl" path="hardware/qcom-caf/bootctrl" remote="LineageOS" revision="lineage-19.1-caf" />
+    <project name="android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" remote="LineageOS" revision="lineage-19.1" />
+    <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="LineageOS" revision="lineage-19.1" />
+    <project name="android_vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="LineageOS" revision="lineage-19.1" />
+</manifest>
