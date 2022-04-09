@@ -177,7 +177,6 @@
     <remove-project name="platform/external/junit"/>
     <remove-project name="platform/external/junit-params"/>
     <remove-project name="platform/external/kernel-headers"/>
-    <remove-project name="platform/external/kmod"  />
     <remove-project name="platform/external/kotlinc"  />
     <remove-project name="platform/external/kotlinx.atomicfu"  />
     <remove-project name="platform/external/kotlinx.coroutines"  />
