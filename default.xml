@@ -4,11 +4,11 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-12.0.0_r7"
+  <default revision="refs/tags/android-12.1.0_r4"
            remote="aosp"
            sync-j="4" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-12.0.0_r7" />
+  <superproject name="platform/superproject" remote="aosp" revision="android-12.1.0_r4" />
   <contactinfo bugurl="go/repo-bug" />
 
   <project path="build/make" name="platform/build" groups="pdk" >
@@ -110,7 +110,6 @@
   <project path="device/ti/beagle_x15-kernel" name="device/ti/beagle-x15-kernel" groups="device,beagle_x15,pdk" clone-depth="1" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/abseil-cpp" name="platform/external/abseil-cpp" groups="pdk" />
-  <project path="external/adhd" name="platform/external/adhd" groups="pdk" />
   <project path="external/adt-infra" name="platform/external/adt-infra" groups="adt-infra,notdefault,pdk-fs" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk" />
   <project path="external/androidplot" name="platform/external/androidplot" groups="pdk" />
@@ -482,6 +481,7 @@
   <project path="external/rust/crates/futures-task" name="platform/external/rust/crates/futures-task" groups="pdk" />
   <project path="external/rust/crates/futures-util" name="platform/external/rust/crates/futures-util" groups="pdk" />
   <project path="external/rust/crates/gdbstub" name="platform/external/rust/crates/gdbstub" groups="pdk" />
+  <project path="external/rust/crates/gdbstub_arch" name="platform/external/rust/crates/gdbstub_arch" groups="pdk" />
   <project path="external/rust/crates/getrandom" name="platform/external/rust/crates/getrandom" groups="pdk" />
   <project path="external/rust/crates/glob" name="platform/external/rust/crates/glob" groups="pdk" />
   <project path="external/rust/crates/grpcio" name="platform/external/rust/crates/grpcio" groups="pdk" />
@@ -634,6 +634,7 @@
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk" />
   <project path="external/tensorflow" name="platform/external/tensorflow" groups="pdk" />
+  <project path="external/TestParameterInjector" name="platform/external/TestParameterInjector" groups="pdk" />
   <project path="external/testng" name="platform/external/testng" groups="pdk" />
   <project path="external/tflite-support" name="platform/external/tflite-support" groups="pdk" />
   <project path="external/timezone-boundary-builder" name="platform/external/timezone-boundary-builder" groups="pdk" clone-depth="2" />
@@ -996,6 +997,7 @@
   <project path="prebuilts/vndk/v28" name="platform/prebuilts/vndk/v28" groups="pdk" clone-depth="1" />
   <project path="prebuilts/vndk/v29" name="platform/prebuilts/vndk/v29" groups="pdk" clone-depth="1" />
   <project path="prebuilts/vndk/v30" name="platform/prebuilts/vndk/v30" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/vndk/v31" name="platform/prebuilts/vndk/v31" groups="pdk" clone-depth="1" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/apex" name="platform/system/apex" groups="pdk" />
   <project path="system/bt" name="platform/system/bt" groups="pdk" />
@@ -1103,6 +1105,6 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <!-- FIRST: Remove unused/forked Projects for minimal manifest -->
-  <include name="remove.xml"/>
+  <!-- FIRST: Add/Replace repos and particular directories needed by TWRP -->
+  <include name="twrp-default.xml"/>
 </manifest>

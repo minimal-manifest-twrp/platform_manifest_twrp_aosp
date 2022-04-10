@@ -1,17 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <remove-project name="device/amlogic/yukawa" />
+    <remove-project name="device/amlogic/yukawa-kernel" />
+    <remove-project name="device/common" />
+    <remove-project name="device/generic/arm64" />
+    <remove-project name="device/generic/armv7-a-neon" />
     <remove-project name="device/generic/art" />
+    <remove-project name="device/generic/car" />
+    <remove-project name="device/generic/common" />
+    <remove-project name="device/generic/goldfish" />
+    <remove-project name="device/generic/goldfish-opengl" />
+    <remove-project name="device/generic/mini-emulator-arm64" />
+    <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+    <remove-project name="device/generic/mini-emulator-x86" />
+    <remove-project name="device/generic/mini-emulator-x86_64" />
+    <remove-project name="device/generic/opengl-transport" />
+    <remove-project name="device/generic/qemu" />
+    <remove-project name="device/generic/trusty" />
+    <remove-project name="device/generic/uml" />
     <remove-project name="device/generic/vulkan-cereal" />
+    <remove-project name="device/generic/x86" />
+    <remove-project name="device/generic/x86_64" />
+    <remove-project name="device/google/atv" />
     <remove-project name="device/google/barbet" />
     <remove-project name="device/google/barbet-kernel" />
     <remove-project name="device/google/barbet-sepolicy" />
+    <remove-project name="device/google/bonito" />
+    <remove-project name="device/google/bonito-kernel" />
+    <remove-project name="device/google/bonito-sepolicy" />
     <remove-project name="device/google/bramble" />
     <remove-project name="device/google/bramble-sepolicy" />
+    <remove-project name="device/google/contexthub" />
+    <remove-project name="device/google/coral" />
+    <remove-project name="device/google/coral-kernel" />
+    <remove-project name="device/google/coral-sepolicy" />
+    <remove-project name="device/google/crosshatch" />
+    <remove-project name="device/google/crosshatch-kernel" />
+    <remove-project name="device/google/crosshatch-sepolicy" />
+    <remove-project name="device/google/fuchsia" />
     <remove-project name="device/google/gs101" />
     <remove-project name="device/google/gs101-sepolicy" />
     <remove-project name="device/google/gs-common" />
     <remove-project name="device/google/raviole" />
     <remove-project name="device/google/raviole-kernel" />
+    <remove-project name="device/google/redbull" />
+    <remove-project name="device/google/redbull-kernel" />
     <remove-project name="device/google/redbull-sepolicy" />
     <remove-project name="device/google/redfin" />
     <remove-project name="device/google/redfin-sepolicy" />
@@ -21,10 +54,18 @@
     <remove-project name="device/google/cuttlefish" />
     <remove-project name="device/google/cuttlefish_prebuilts" />
     <remove-project name="device/google/trout" />
+    <remove-project name="device/google/vrservices" />
     <remove-project name="device/google_car" />
     <remove-project name="device/linaro/dragonboard" />
     <remove-project name="device/linaro/dragonboard-kernel" />
+    <remove-project name="device/linaro/hikey" />
+    <remove-project name="device/linaro/hikey-kernel" />
+    <remove-project name="device/linaro/poplar" />
+    <remove-project name="device/linaro/poplar-kernel" />
     <remove-project name="device/mediatek/wembley-sepolicy" />
+    <remove-project name="device/ti/beagle-x15" />
+    <remove-project name="device/ti/beagle-x15-kernel" />
+    <remove-project name="device/sample" />
 
     <remove-project name="kernel/prebuilts/4.19/arm64" />
     <remove-project name="kernel/prebuilts/5.4/arm64" />
@@ -40,14 +81,18 @@
     <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.4/x86-64" />
     <remove-project name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" />
     <remove-project name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" />
+    <remove-project name="kernel/tests" />
 
     <remove-project name="platform/compatibility/cdd" />
 
     <remove-project name="platform/cts" />
 
+    <remove-project name="platform/developers/build" />
+    <remove-project name="platform/developers/demos" />
+    <remove-project name="platform/developers/samples/android" />
+
     <remove-project name="platform/external/aac" />
     <remove-project name="platform/external/abseil-cpp"  />
-    <remove-project name="platform/external/adhd"  />
     <remove-project name="platform/external/adt-infra"/>
     <remove-project name="platform/external/android-clat"/>
     <remove-project name="platform/external/androidplot"/>
@@ -145,7 +190,6 @@
     <remove-project name="platform/external/hamcrest"/>
     <remove-project name="platform/external/harfbuzz_ng"/>
     <remove-project name="platform/external/hyphenation-patterns"/>
-    <remove-project name="platform/external/icu" />
     <remove-project name="platform/external/igt-gpu-tools"  />
     <remove-project name="platform/external/image_io"  />
     <remove-project name="platform/external/ImageMagick"/>
@@ -218,7 +262,6 @@
     <remove-project name="platform/external/libwebsockets"  />
     <remove-project name="platform/external/libxaac"  />
     <remove-project name="platform/external/libxkbcommon"  />
-    <remove-project name="platform/external/libxml2" />
     <remove-project name="platform/external/libyuv"/>
     <remove-project name="platform/external/linux-kselftest"/>
     <remove-project name="platform/external/lmfit"/>
@@ -334,6 +377,7 @@
     <remove-project name="platform/external/rust/crates/futures-task"  />
     <remove-project name="platform/external/rust/crates/futures-util"  />
     <remove-project name="platform/external/rust/crates/gdbstub"  />
+    <remove-project name="platform/external/rust/crates/gdbstub_arch" />
     <remove-project name="platform/external/rust/crates/grpcio"  />
     <remove-project name="platform/external/rust/crates/grpcio-compiler"  />
     <remove-project name="platform/external/rust/crates/grpcio-sys"  />
@@ -440,13 +484,13 @@
     <remove-project name="platform/external/sonic"/>
     <remove-project name="platform/external/sonivox"/>
     <remove-project name="platform/external/speex"  />
-    <remove-project name="platform/external/sqlite" />
     <remove-project name="platform/external/stressapptest"/>
     <remove-project name="platform/external/subsampling-scale-image-view"  />
     <remove-project name="platform/external/swiftshader"/>
     <remove-project name="platform/external/tagsoup"/>
     <remove-project name="platform/external/tcpdump"/>
     <remove-project name="platform/external/tensorflow"  />
+    <remove-project name="platform/external/TestParameterInjector" />
     <remove-project name="platform/external/testng"/>
     <remove-project name="platform/external/tflite-support"  />
     <remove-project name="platform/external/timezone-boundary-builder"  />
@@ -524,12 +568,32 @@
     <remove-project name="platform/hardware/google/graphics/gs101" />
     <remove-project name="platform/hardware/google/interfaces"/>
     <remove-project name="platform/hardware/google/pixel"/>
+    <remove-project name="platform/hardware/google/pixel-sepolicy" />
     <remove-project name="platform/hardware/invensense"/>
     <remove-project name="platform/hardware/knowles/athletico/sound_trigger_hal"/>
     <remove-project name="platform/hardware/nxp/nfc" />
     <remove-project name="platform/hardware/nxp/secure_element" />
+    <remove-project name="platform/hardware/qcom/audio" />
+    <remove-project name="platform/hardware/qcom/bt" />
+    <remove-project name="platform/hardware/qcom/camera" />
+    <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
+    <remove-project name="platform/hardware/qcom/display" />
+    <remove-project name="platform/hardware/qcom/gps" />
     <remove-project name="platform/hardware/qcom/keymaster"/>
+    <remove-project name="platform/hardware/qcom/media" />
+    <remove-project name="platform/hardware/qcom/msm8960" />
+    <remove-project name="platform/hardware/qcom/msm8994" />
+    <remove-project name="platform/hardware/qcom/msm8996" />
+    <remove-project name="platform/hardware/qcom/msm8x09" />
+    <remove-project name="platform/hardware/qcom/msm8x26" />
+    <remove-project name="platform/hardware/qcom/msm8x27" />
+    <remove-project name="platform/hardware/qcom/msm8x84" />
+    <remove-project name="platform/hardware/qcom/power" />
+    <remove-project name="platform/hardware/qcom/sdm845/bt" />
     <remove-project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" />
+    <remove-project name="platform/hardware/qcom/sdm845/display" />
+    <remove-project name="platform/hardware/qcom/sdm845/gps" />
+    <remove-project name="platform/hardware/qcom/sdm845/media" />
     <remove-project name="platform/hardware/qcom/sdm845/thermal" />
     <remove-project name="platform/hardware/qcom/sdm845/vr" />
     <remove-project name="platform/hardware/qcom/sm7150/gps" />
@@ -552,6 +616,9 @@
     <remove-project name="platform/hardware/ti/am57x"/>
 
     <remove-project name="platform/packages/apps/BasicSmsReceiver"/>
+    <remove-project name="platform/packages/apps/Bluetooth" />
+    <remove-project name="platform/packages/apps/Browser2" />
+    <remove-project name="platform/packages/apps/Calendar" />
     <remove-project name="platform/packages/apps/Camera2"/>
     <remove-project name="platform/packages/apps/Car/Calendar"/>
     <remove-project name="platform/packages/apps/Car/Cluster"/>
@@ -577,15 +644,27 @@
     <remove-project name="platform/packages/apps/CarrierConfig"/>
     <remove-project name="platform/packages/apps/CellBroadcastReceiver"/>
     <remove-project name="platform/packages/apps/CertInstaller"/>
+    <remove-project name="platform/packages/apps/Contacts" />
     <remove-project name="platform/packages/apps/DevCamera"/>
+    <remove-project name="platform/packages/apps/DeskClock" />
+    <remove-project name="platform/packages/apps/Dialer" />
+    <remove-project name="platform/packages/apps/DocumentsUI" />
     <remove-project name="platform/packages/apps/EmergencyInfo"/>
+    <remove-project name="platform/packages/apps/Gallery" />
+    <remove-project name="platform/packages/apps/Gallery2" />
     <remove-project name="platform/packages/apps/HTMLViewer"/>
     <remove-project name="platform/packages/apps/ImsServiceEntitlement"/>
     <remove-project name="platform/packages/apps/KeyChain"/>
+    <remove-project name="platform/packages/apps/Launcher3" />
     <remove-project name="platform/packages/apps/LegacyCamera"/>
     <remove-project name="platform/packages/apps/ManagedProvisioning"/>
+    <remove-project name="platform/packages/apps/Messaging" />
+    <remove-project name="platform/packages/apps/Music" />
+    <remove-project name="platform/packages/apps/MusicFX" />
+    <remove-project name="platform/packages/apps/Nfc" />
     <remove-project name="platform/packages/apps/OnDeviceAppPrediction"/>
     <remove-project name="platform/packages/apps/OneTimeInitializer"/>
+    <remove-project name="platform/packages/apps/PhoneCommon" />
     <remove-project name="platform/packages/apps/Protips"/>
     <remove-project name="platform/packages/apps/Provision"/>
     <remove-project name="platform/packages/apps/QuickAccessWallet"/>
@@ -594,21 +673,26 @@
     <remove-project name="platform/packages/apps/SafetyRegulatoryInfo"/>
     <remove-project name="platform/packages/apps/SampleLocationAttribution"/>
     <remove-project name="platform/packages/apps/SecureElement"/>
+    <remove-project name="platform/packages/apps/Settings" />
+    <remove-project name="platform/packages/apps/SettingsIntelligence" />
     <remove-project name="platform/packages/apps/SpareParts"/>
     <remove-project name="platform/packages/apps/Stk"/>
     <remove-project name="platform/packages/apps/StorageManager"/>
     <remove-project name="platform/packages/apps/Tag"/>
     <remove-project name="platform/packages/apps/Test/connectivity"/>
+    <remove-project name="platform/packages/apps/ThemePicker" />
     <remove-project name="platform/packages/apps/TimeZoneData"/>
     <remove-project name="platform/packages/apps/TimeZoneUpdater"/>
     <remove-project name="platform/packages/apps/Traceur"/>
     <remove-project name="platform/packages/apps/TvSettings"/>
     <remove-project name="platform/packages/apps/TV"/>
     <remove-project name="platform/packages/apps/UniversalMediaPlayer"/>
+    <remove-project name="platform/packages/apps/WallpaperPicker" />
+    <remove-project name="platform/packages/apps/WallpaperPicker2" />
 
+    <remove-project name="platform/packages/inputmethods/LatinIME" />
     <remove-project name="platform/packages/inputmethods/LeanbackIME" />
 
-    <remove-project name="platform/packages/modules/adb" />
     <remove-project name="platform/packages/modules/ArtPrebuilt" />
     <remove-project name="platform/packages/modules/BootPrebuilt/5.4/arm64" />
     <remove-project name="platform/packages/modules/BootPrebuilt/5.10/arm64" />
@@ -630,6 +714,7 @@
     <remove-project name="platform/packages/providers/CalendarProvider"/>
     <remove-project name="platform/packages/providers/CallLogProvider"/>
     <remove-project name="platform/packages/providers/ContactsProvider"/>
+    <remove-project name="platform/packages/providers/DownloadProvider" />
     <remove-project name="platform/packages/providers/PartnerBookmarksProvider"/>
     <remove-project name="platform/packages/providers/TelephonyProvider"/>
     <remove-project name="platform/packages/providers/TvProvider"/>
@@ -644,6 +729,8 @@
     <remove-project name="platform/packages/services/Iwlan"/>
     <remove-project name="platform/packages/services/Mms"/>
     <remove-project name="platform/packages/services/Mtp"/>
+    <remove-project name="platform/packages/services/Telephony" />
+    <remove-project name="platform/packages/services/Telecomm" />
 
     <remove-project name="platform/packages/wallpapers/ImageWallpaper"/>
     <remove-project name="platform/packages/wallpapers/LivePicker"/>
@@ -710,15 +797,12 @@
     <remove-project name="platform/system/chre"/>
     <remove-project name="platform/system/iorap"/>
     <remove-project name="platform/system/libartpalette"/>
-    <remove-project name="platform/system/libhwbinder" />
     <remove-project name="platform/system/libsysprop"/>
     <remove-project name="platform/system/media"/>
     <remove-project name="platform/system/nvram"/>
-    <remove-project name="platform/system/security" />
     <remove-project name="platform/system/server_configurable_flags" />
     <remove-project name="platform/system/teeui" />
     <remove-project name="platform/system/testing/gtest_extras" />
-    <remove-project name="platform/system/vold" />
 
     <!-- Remove platform/test/vts to avoid the test errors and more dependencies -->
     <remove-project name="platform/test/app_compat/csuite" />
@@ -771,7 +855,4 @@
     <remove-project name="toolchain/benchmark"/>
     <remove-project name="toolchain/llvm-project"  />
     <remove-project name="toolchain/pgo-profiles"/>
-
-    <!-- LAST: Add/Replace repos and particular directories needed by TWRP -->
-    <include name="twrp-extras.xml"/>
 </manifest>
