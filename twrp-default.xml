@@ -57,13 +57,7 @@
     <project path="system/vold" name="android_system_vold" remote="TeamWin" revision="android-12.1"/>
 
     <!-- Use TeamWin custom vendor repo for build system -->
-    <project path="vendor/twrp" name="android_vendor_twrp" remote="TeamWin" revision="android-12.1" >
-       <!-- Add dummy files to minimize dependencies and eliminate build errors -->
-       <copyfile src="dummy/Android.mk" dest="frameworks/base/core/xsd/vts/Android.mk" />
-       <copyfile src="dummy/Android.mk" dest="frameworks/base/services/core/xsd/vts/Android.mk" />
-       <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/compatibilityMatrix/vts/Android.mk" />
-       <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/halManifest/vts/Android.mk" />
-    </project>
+    <project path="vendor/twrp" name="android_vendor_twrp" remote="TeamWin" revision="android-12.1" />
 
     <!-- Include phh's treble repo for lptools support -->
     <project name="phhusson/vendor_lptools" path="external/lptools" remote="github" revision="master" />
