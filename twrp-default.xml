@@ -27,6 +27,7 @@
     <remove-project name="platform/system/libhidl" />
     <remove-project name="platform/system/libhwbinder" />
     <remove-project name="platform/system/security" />
+    <remove-project name="platform/system/update_engine" />
     <remove-project name="platform/system/vold" />
 
     <!-- TWRP lives in TeamWin repo -->
@@ -54,6 +55,7 @@
     <project path="system/libhidl" name="android_system_libhidl" remote="TeamWin" revision="android-12.1"/>
     <project path="system/libhwbinder" name="android_system_libhwbinder" remote="TeamWin" revision="android-12.1"/>
     <project path="system/security" name="android_system_security" remote="TeamWin" revision="android-12.1"/>
+    <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-12.1"/>
     <project path="system/vold" name="android_system_vold" remote="TeamWin" revision="android-12.1"/>
 
     <!-- Use TeamWin custom vendor repo for build system -->
