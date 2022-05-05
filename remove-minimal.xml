@@ -757,10 +757,7 @@
     <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9"/>
     <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1"/>
     <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9"/>
-    <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
-    <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
     <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
-    <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
     <remove-project name="platform/prebuilts/gdb/darwin-x86"/>
     <remove-project name="platform/prebuilts/gdb/linux-x86"/>
     <remove-project name="platform/prebuilts/go/darwin-x86"/>
