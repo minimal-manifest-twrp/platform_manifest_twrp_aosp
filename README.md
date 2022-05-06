@@ -54,13 +54,14 @@ Then to sync up:
 
     repo sync
 
-Then to build for a device with recovery partition:
+Then to setup the build:
 
-     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_<device>-eng; mka recoveryimage
+     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_<device>-eng
 
-Then to build for a device without recovery partition:
-
-     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_<device>-eng; mka bootimage
+The build target is dependent on the device, and should reflect the location of stock recovery on the device. Issue the build command that applies to your device:
+- Recovery partition: `mka recoveryimage`
+- Boot image ramdisk: `mka bootimage`
+- Vendor_boot image ramdisk: `mka vendorbootimage`
 
 ### Special Notes for this branch
 - Currently, decryption on 12.1 is a work in progress (WIP). In order to successfully build in this branch, the following patch(es) will need to be cherry-picked:
@@ -68,4 +69,3 @@ Then to build for a device without recovery partition:
     [fscrypt: wip](https://gerrit.twrp.me/c/android_bootable_recovery/+/5405)
 
 - Device makefile in the device tree and dependencies file should use the "twrp" prefix.
-- If your device shipped with Android 12 and recovery is stored in the vendor_boot ramdisk, then TWRP should be built using `mka vendorbootimage`
