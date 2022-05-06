@@ -58,8 +58,6 @@ Then to sync up:
 
     repo sync
 
-NOTE: Device makefile in the device tree and dependencies file should use the "twrp" prefix.
-
 Then to build for a device with recovery partition:
 
      cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_<device>-eng; mka recoveryimage
@@ -67,3 +65,10 @@ Then to build for a device with recovery partition:
 Then to build for a device without recovery partition:
 
      cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_<device>-eng; mka bootimage
+
+### Special Notes for this branch
+- Currently, decryption on 12.1 is a work in progress (WIP). In order to successfully build in this branch, the following patch(es) will need to be cherry-picked:
+
+    [fscrypt: wip](https://gerrit.twrp.me/c/android_bootable_recovery/+/5405)
+
+- Device makefile in the device tree and dependencies file should use the "twrp" prefix.
