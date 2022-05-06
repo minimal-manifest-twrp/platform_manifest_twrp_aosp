@@ -1,5 +1,4 @@
 ## Submitting Patches ##
-------------------
 Our project is open source, and patches are always welcome!
 You can send patches by using:
 
@@ -8,7 +7,6 @@ Pull request, right here on git.
 Contact us at https://rebrand.ly/teamwin-recovery-zulip-community
 
 ## Maintaining Authorship ##
-----------------------
 Maintaining authorship is a very important aspect of working with Open Source code. If you wish to submit a patch/fix
 from anywhere else (another ROM, project, etc.), it is imperative that you maintain the ownership of the person whose
 work you are seeking to include. Doing so will ensure that credit is given where it is deserved, and
@@ -41,8 +39,6 @@ me fix it because I was found out!" message.
 
 
 ## Getting Started ##
----------------
-
 To get started with AOSP sources to build TWRP, you'll need to get familiar
 with [Git and Repo](https://source.android.com/source/using-repo.html).
 
