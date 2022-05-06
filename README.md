@@ -68,3 +68,4 @@ Then to build for a device without recovery partition:
     [fscrypt: wip](https://gerrit.twrp.me/c/android_bootable_recovery/+/5405)
 
 - Device makefile in the device tree and dependencies file should use the "twrp" prefix.
+- If your device shipped with Android 12 and recovery is stored in the vendor_boot ramdisk, then TWRP should be built using `mka vendorbootimage`
