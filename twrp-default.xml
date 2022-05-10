@@ -31,6 +31,8 @@
     <remove-project name="platform/system/vold" />
 
     <!-- We need the LOS forks of these repos -->
+    <remove-project name="platform/hardware/interfaces"/>
+
     <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
     <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
     <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
@@ -83,6 +85,9 @@
 
     <!-- Include ntfs_3g for NTFS support -->
     <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-18.1"/>
+
+    <!-- Include for legacy wrappedkey support -->
+    <project path="hardware/interfaces" name="android_hardware_interfaces" remote="LineageOS" revision="lineage-19.1" />
 
     <!-- Include lineage-tools for lzma support -->
     <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS" revision="lineage-19.1"/>
