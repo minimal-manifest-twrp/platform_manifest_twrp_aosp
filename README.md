@@ -64,8 +64,13 @@ The build target is dependent on the device, and should reflect the location of 
 - Vendor_boot image ramdisk: `mka vendorbootimage`
 
 ### Special Notes for this branch
-- Currently, decryption on 12.1 is a work in progress (WIP). In order to successfully build in this branch, the following patch(es) will need to be cherry-picked:
+- Device makefile in the device tree and dependencies file should use the "twrp" prefix.
+- Currently, decryption on 12.1 is a work in progress (WIP). Decryption is only fully functional (i.e. works with password/PIN/pattern) on legacy Pixel devices that use weaver but do not use wrappedkey. On other devices, decryption will only work if no password/PIN/pattern is set in Android.
+- FDE decryption is not presently supported in this branch.
+- In order to successfully build in this branch, the following patch(es) will need to be cherry-picked:
 
     [fscrypt: wip](https://gerrit.twrp.me/c/android_bootable_recovery/+/5405)
 
-- Device makefile in the device tree and dependencies file should use the "twrp" prefix.
+- If you device uses legacy wrappedkey for decryption, then the following patches will need to be picked for decryption to function:
+
+    [twelve-fbe-qcom-wrapped-key](https://gerrit.twrp.me/q/topic:twelve-fbe-qcom-wrapped-key)
