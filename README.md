@@ -69,8 +69,14 @@ The build target is dependent on the device, and should reflect the location of 
 - FDE decryption is not presently supported in this branch.
 - In order to successfully build in this branch, the following patch(es) will need to be cherry-picked:
 
-    [fscrypt: wip](https://gerrit.twrp.me/c/android_bootable_recovery/+/5405)
+    - [fscrypt: wip](https://gerrit.twrp.me/c/android_bootable_recovery/+/5405)
 
 - If you device uses legacy wrappedkey for decryption, then the following patches will need to be picked for decryption to function:
 
-    [twelve-fbe-qcom-wrapped-key](https://gerrit.twrp.me/q/topic:twelve-fbe-qcom-wrapped-key)
+    - [twelve-fbe-qcom-wrapped-key](https://gerrit.twrp.me/q/topic:twelve-fbe-qcom-wrapped-key+-status:merged)
+
+- For devices using vendor_boot, this following patch(es) will be needed to ensure that TWRP can be fastboot booted:
+
+    - [add twrpfastboot=1 to GENERIC_KERNEL_CMDLINE for all vendor_boot devices](https://gerrit.twrp.me/c/android_vendor_twrp/+/5515)
+    - [Revert "allow adding cmdline to internal boot image for non-GKI vendor_boot devices"](https://gerrit.twrp.me/c/android_build/+/5516)
+    - [add GENERIC_KERNEL_CMDLINE back to recoveryimage](https://gerrit.twrp.me/c/android_build/+/5517)
