@@ -74,9 +74,3 @@ The build target is dependent on the device, and should reflect the location of 
 - If your device uses legacy wrappedkey for decryption, then the following patches will need to be picked for decryption to function:
 
     - [twelve-fbe-qcom-wrapped-key](https://gerrit.twrp.me/q/topic:twelve-fbe-qcom-wrapped-key+-status:merged)
-
-- For devices using vendor_boot, the following patch(es) will be needed to ensure that TWRP can be fastboot booted:
-
-    - [add twrpfastboot=1 to GENERIC_KERNEL_CMDLINE for all vendor_boot devices](https://gerrit.twrp.me/c/android_vendor_twrp/+/5515)
-    - [Revert "allow adding cmdline to internal boot image for non-GKI vendor_boot devices"](https://gerrit.twrp.me/c/android_build/+/5516)
-    - [add GENERIC_KERNEL_CMDLINE back to recoveryimage](https://gerrit.twrp.me/c/android_build/+/5517)
