@@ -237,7 +237,6 @@
     <remove-project name="platform/external/libepoxy"  />
     <remove-project name="platform/external/libese"/>
     <remove-project name="platform/external/libexif"/>
-    <remove-project name="platform/external/libffi"  />
     <remove-project name="platform/external/libgav1"  />
     <remove-project name="platform/external/libgsm"/>
     <remove-project name="platform/external/libhevc"/>

@@ -56,6 +56,7 @@
     </project>
     <project path="external/icu" name="android_external_icu" remote="TeamWin" revision="android-12.1"/>
     <project path="external/libxml2" name="android_external_libxml2" remote="TeamWin" revision="android-12.1"/>
+    <project path="external/python3" name="android_external_python3" remote="TeamWin" revision="android-12.1"/>
     <project path="external/sqlite" name="android_external_sqlite" remote="TeamWin" revision="android-12.1"/>
     <project path="packages/modules/adb" name="android_packages_modules_adb" remote="TeamWin" revision="android-12.1"/>
     <project path="system/core" name="android_system_core" remote="TeamWin" revision="android-12.1"/>
