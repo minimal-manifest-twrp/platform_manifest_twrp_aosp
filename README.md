@@ -70,7 +70,3 @@ The build target is dependent on the device, and should reflect the location of 
 - In order to successfully build in this branch, the following patch(es) will need to be cherry-picked:
 
     - [fscrypt: wip](https://gerrit.twrp.me/c/android_bootable_recovery/+/5405)
-
-- If your device uses legacy wrappedkey for decryption, then the following patches will need to be picked for decryption to function:
-
-    - [twelve-fbe-qcom-wrapped-key](https://gerrit.twrp.me/q/topic:twelve-fbe-qcom-wrapped-key+-status:merged)
