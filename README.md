@@ -70,3 +70,4 @@ The build target is dependent on the device, and should reflect the location of 
 - In order to successfully build in this branch, the following patch(es) will need to be cherry-picked:
 
     - [fscrypt: wip](https://gerrit.twrp.me/c/android_bootable_recovery/+/5405)
+    - [fscrypt: move functionality to libvold](https://gerrit.twrp.me/c/android_system_vold/+/5540)
