@@ -52,6 +52,8 @@
     <!-- Include ntfs_3g for NTFS support -->
     <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-18.1"/>
 
+    <project path="external/python3" name="android_external_python3" remote="TeamWin" revision="android-11"/>
+
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="TeamWin" revision="android-11"/>
 
     <project path="system/core" name="android_system_core" remote="TeamWin" revision="android-11"/>
