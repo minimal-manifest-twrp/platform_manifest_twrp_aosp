@@ -8,6 +8,9 @@
             fetch="https://github.com/LineageOS"
             review="https://review.lineageos.org"/>
 
+    <remote name="ProtonAOSP"
+            fetch="https://github.com/ProtonAOSP"/>
+
     <remote name="github"
             fetch="https://github.com"/>
 
@@ -36,6 +39,9 @@
     <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
     <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
     <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
+
+    <!-- We need the ProtonAOSP forks of these repos -->
+    <remove-project name="platform/external/zlib"/>
 
     <!-- TWRP lives in TeamWin repo -->
     <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-12.1"/>
@@ -86,6 +92,9 @@
 
     <!-- Include ntfs_3g for NTFS support -->
     <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-18.1"/>
+
+    <!-- Include ProtonAOSP's optimized zlib-ng -->
+    <project path="external/zlib-ng" name="android_external_zlib-ng" remote="ProtonAOSP" revision="sc-qpr3"/>
 
     <!-- Include for legacy wrappedkey support -->
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="LineageOS" revision="lineage-19.1" />
