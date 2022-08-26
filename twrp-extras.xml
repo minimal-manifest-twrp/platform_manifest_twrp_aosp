@@ -62,6 +62,9 @@
 
     <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-11"/>
 
+    <!-- Include mkbootimg from LineageOS for "\-\-dt" support -->
+    <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="LineageOS" revision="lineage-18.1"/>
+
     <!-- Include lineage-tools for lzma support -->
     <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS"
              revision="lineage-18.1"/>
