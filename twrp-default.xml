@@ -33,6 +33,8 @@
     <!-- We need the LOS forks of these repos -->
     <remove-project name="platform/hardware/interfaces"/>
 
+    <remove-project name="platform/system/tools/mkbootimg"/>
+
     <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
     <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
     <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
@@ -92,6 +94,9 @@
 
     <!-- Include lineage-tools for lzma support -->
     <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS" revision="lineage-19.1"/>
+
+    <!-- Include mkbootimg from LineageOS for '\-\-dt' support -->
+    <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="LineageOS" revision="lineage-19.1"/>
 
     <!-- Common qcom repos -->
     <project name="android_device_qcom_common" path="device/qcom/common" remote="TeamWin" revision="android-12.1" />
