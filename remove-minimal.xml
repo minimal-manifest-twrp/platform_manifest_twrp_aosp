@@ -66,6 +66,7 @@
     <remove-project path="device/google/sunfish-sepolicy" />
     <remove-project path="device/google/cuttlefish" />
     <remove-project path="device/google/cuttlefish_prebuilts" />
+    <remove-project path="device/google/cuttlefish_vmm" />
     <remove-project path="device/google/trout" />
     <remove-project path="device/google/vrservices" />
     <remove-project path="device/google/zuma" />
