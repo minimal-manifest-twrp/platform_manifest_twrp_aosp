@@ -37,7 +37,7 @@
     <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-14"/>
 
     <!-- Use TeamWin repos for full recovery compatibility -->
-    <project path="build/make" name="android_build" remote="TeamWin" revision="android-14" groups="pdk">
+    <project path="build/make" name="android_build" remote="TeamWin" revision="android-14.1" groups="pdk">
         <copyfile src="core/root.mk" dest="Makefile"/>
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
@@ -57,10 +57,10 @@
     <project path="system/core" name="android_system_core" remote="TeamWin" revision="android-14"/>
     <project path="system/libhidl" name="android_system_libhidl" remote="TeamWin" revision="android-14"/>
     <project path="system/security" name="android_system_security" remote="TeamWin" revision="android-14"/>
-    <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-14"/>
+    <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-14.1"/>
     <project path="system/vold" name="android_system_vold" remote="TeamWin" revision="android-14"/>
     <project path="cts" name="android_cts" remote="TeamWin" revision="android-14"/>
-    <project path="system/extras" name="android_system_extras" remote="TeamWin" revision="android-14"/>
+    <project path="system/extras" name="android_system_extras" remote="TeamWin" revision="android-14.1"/>
 
     <!-- Use TeamWin custom vendor repo for build system -->
     <project path="vendor/twrp" name="android_vendor_twrp" remote="TeamWin" revision="android-14" />
