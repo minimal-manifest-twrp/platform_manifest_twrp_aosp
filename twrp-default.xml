@@ -105,6 +105,9 @@
     <project name="android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" remote="LineageOS" revision="lineage-21.0" />
 -->
 
+    <!-- Inline kernel build -->
+    <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="main-kernel-build-2024" />
+
 <!-- LAST: Remove unused projects for minimal manifest -->
     <include name="remove-minimal.xml"/>
 </manifest>
