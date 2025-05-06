@@ -169,7 +169,6 @@
     <remove-project path="external/gemmlowp" />
     <remove-project path="external/geojson-jackson" />
     <remove-project path="external/geonames" />
-    <remove-project path="external/gflags" />
     <remove-project path="external/giflib" />
     <remove-project path="external/glide" />
     <remove-project path="external/google-benchmark" />
