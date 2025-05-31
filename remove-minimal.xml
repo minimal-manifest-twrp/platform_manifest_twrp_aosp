@@ -712,7 +712,6 @@
     <remove-project path="tools/acloud" />
     <remove-project path="tools/apifinder" />
     <remove-project path="tools/apkzlib" />
-    <remove-project path="tools/asuite" />
     <remove-project path="tools/carrier_settings" />
     <remove-project path="tools/currysrc" />
     <remove-project path="tools/dexter" />
