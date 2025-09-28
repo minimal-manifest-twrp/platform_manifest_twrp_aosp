@@ -192,7 +192,6 @@
     <remove-project path="external/google-java-format" />
     <remove-project path="external/google-smali" />
     <remove-project path="external/google-styleguide" />
-    <remove-project path="external/guava" />
     <remove-project path="external/guice" />
     <remove-project path="external/hamcrest" />
     <remove-project path="external/harfbuzz_ng" />
