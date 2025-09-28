@@ -23,6 +23,7 @@
     <remove-project name="platform/system/core" />
     <remove-project name="platform/system/libhidl" />
     <remove-project name="platform/system/security" />
+    <remove-project name="platform/system/sepolicy" />
     <remove-project name="platform/system/update_engine" />
     <remove-project name="platform/system/vold" />
     <remove-project name="platform/cts" />
@@ -59,6 +60,7 @@
     <project path="system/core" name="android_system_core" remote="TeamWin" revision="android-14.1"/>
     <project path="system/libhidl" name="android_system_libhidl" remote="TeamWin" revision="android-14.1"/>
     <project path="system/security" name="android_system_security" remote="TeamWin" revision="android-14.1"/>
+    <project path="system/sepolicy" name="android_system_sepolicy" remote="TeamWin" revision="android-14.1"/>
     <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-14.1"/>
     <project path="system/vold" name="android_system_vold" remote="TeamWin" revision="android-14.1"/>
     <project path="cts" name="android_cts" remote="TeamWin" revision="android-14.1"/>
