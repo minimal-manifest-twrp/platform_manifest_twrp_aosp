@@ -8,7 +8,7 @@
            remote="aosp"
            sync-j="4" />
 	
-	<superproject name="platform/superproject" remote="aosp"/>
+	<superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r82" />
 	<contactinfo bugurl="go/repo-bug" />
 	
 	<project path="build/make" name="platform/build" groups="pdk" >
